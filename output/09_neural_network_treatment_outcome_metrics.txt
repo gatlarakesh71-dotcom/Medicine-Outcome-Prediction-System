@@ -1,0 +1,20 @@
+Accuracy: 0.5812
+
+              precision    recall  f1-score   support
+
+          No       0.85      0.56      0.68    153137
+         Yes       0.30      0.65      0.41     44039
+
+    accuracy                           0.58    197176
+   macro avg       0.57      0.61      0.54    197176
+weighted avg       0.73      0.58      0.62    197176
+
+
+Confusion Matrix:
+[[85796 67341]
+ [15239 28800]]
+
+Training set size: 788700
+Test set size: 197176
+Input features after preprocessing: 94
+Epochs completed: 18
