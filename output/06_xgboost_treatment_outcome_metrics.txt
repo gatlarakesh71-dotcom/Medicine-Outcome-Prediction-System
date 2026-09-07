@@ -1,15 +1,67 @@
-Accuracy: 0.7767
+Model: XGBoost
+Split: 60% training / 20% validation / 20% testing
 
+Split sizes:
+Training: 591525
+Validation: 197175
+Testing: 197176
+
+Training metrics:
+Samples: 591525
+Accuracy: 0.7779
+Balanced Accuracy: 0.5044
+Precision: 0.6987
+Recall: 0.0100
+F1-score: 0.0197
+ROC-AUC: 0.6720
+PR-AUC: 0.3670
+Confusion Matrix: [[458840, 570], [130793, 1322]]
+Classification Report:
+              precision    recall  f1-score   support
+
+          No       0.78      1.00      0.87    459410
+         Yes       0.70      0.01      0.02    132115
+
+    accuracy                           0.78    591525
+   macro avg       0.74      0.50      0.45    591525
+weighted avg       0.76      0.78      0.68    591525
+
+Validation metrics:
+Samples: 197175
+Accuracy: 0.7765
+Balanced Accuracy: 0.5022
+Precision: 0.4786
+Recall: 0.0064
+F1-score: 0.0125
+ROC-AUC: 0.6475
+PR-AUC: 0.3312
+Confusion Matrix: [[152832, 305], [43758, 280]]
+Classification Report:
               precision    recall  f1-score   support
 
           No       0.78      1.00      0.87    153137
-         Yes       0.50      0.01      0.01     44039
+         Yes       0.48      0.01      0.01     44038
+
+    accuracy                           0.78    197175
+   macro avg       0.63      0.50      0.44    197175
+weighted avg       0.71      0.78      0.68    197175
+
+Testing metrics:
+Samples: 197176
+Accuracy: 0.7767
+Balanced Accuracy: 0.5026
+Precision: 0.5080
+Recall: 0.0072
+F1-score: 0.0142
+ROC-AUC: 0.6456
+PR-AUC: 0.3314
+Confusion Matrix: [[152830, 307], [43722, 317]]
+Classification Report:
+              precision    recall  f1-score   support
+
+          No       0.78      1.00      0.87    153137
+         Yes       0.51      0.01      0.01     44039
 
     accuracy                           0.78    197176
    macro avg       0.64      0.50      0.44    197176
 weighted avg       0.72      0.78      0.68    197176
-
-
-Confusion Matrix:
-[[152837    300]
- [ 43735    304]]

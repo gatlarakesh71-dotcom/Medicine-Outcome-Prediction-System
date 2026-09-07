@@ -1,20 +1,50 @@
-Accuracy: 0.5812
+Training accuracy: 0.5906
 
               precision    recall  f1-score   support
 
-          No       0.85      0.56      0.68    153137
-         Yes       0.30      0.65      0.41     44039
+          No       0.85      0.58      0.69    459410
+         Yes       0.30      0.64      0.41    132115
 
-    accuracy                           0.58    197176
-   macro avg       0.57      0.61      0.54    197176
-weighted avg       0.73      0.58      0.62    197176
-
+    accuracy                           0.59    591525
+   macro avg       0.58      0.61      0.55    591525
+weighted avg       0.73      0.59      0.62    591525
 
 Confusion Matrix:
-[[85796 67341]
- [15239 28800]]
+[[264371 195039]
+ [ 47144  84971]]
 
-Training set size: 788700
+Validation accuracy: 0.5902
+
+              precision    recall  f1-score   support
+
+          No       0.85      0.58      0.69    153137
+         Yes       0.30      0.64      0.41     44038
+
+    accuracy                           0.59    197175
+   macro avg       0.57      0.61      0.55    197175
+weighted avg       0.73      0.59      0.62    197175
+
+Confusion Matrix:
+[[88211 64926]
+ [15878 28160]]
+
+Testing accuracy: 0.5884
+
+              precision    recall  f1-score   support
+
+          No       0.85      0.57      0.68    153137
+         Yes       0.30      0.64      0.41     44039
+
+    accuracy                           0.59    197176
+   macro avg       0.57      0.61      0.55    197176
+weighted avg       0.73      0.59      0.62    197176
+
+Confusion Matrix:
+[[87793 65344]
+ [15811 28228]]
+
+Training set size: 591525
+Validation set size: 197175
 Test set size: 197176
 Input features after preprocessing: 94
-Epochs completed: 18
+Epochs completed: 17

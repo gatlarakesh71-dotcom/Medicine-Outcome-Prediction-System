@@ -1,0 +1,27 @@
+feature,mean_abs_shap,model
+age,0.04722681417468271,Gradient Boosting
+concurrent_drugs,0.024392336615541976,Gradient Boosting
+creatinine,0.017039959351635946,Gradient Boosting
+alt,0.0005979395537882396,Gradient Boosting
+dosage_mg,0.0005651205397858183,Gradient Boosting
+ethnicity,0.0004958920435976622,Gradient Boosting
+drug_name,0.00046990662621342153,Gradient Boosting
+egfr,0.00040247900320448157,Gradient Boosting
+weight_kg,0.00039200213491139,Gradient Boosting
+bmi,0.0003489338262722031,Gradient Boosting
+diagnosis,0.0003289951708915896,Gradient Boosting
+gender,0.0002694726521630489,Gradient Boosting
+hemoglobin,0.0002393865247134558,Gradient Boosting
+ast,0.0002114827788547758,Gradient Boosting
+smoking_status,0.00021039110236481979,Gradient Boosting
+temperature_f,0.00017991095523016082,Gradient Boosting
+heart_rate,0.00016999795967647676,Gradient Boosting
+total_cholesterol,0.0001427301962467739,Gradient Boosting
+systolic_bp,0.00010082254189348472,Gradient Boosting
+route,9.08258194370651e-05,Gradient Boosting
+height_cm,8.054152620295289e-05,Gradient Boosting
+hba1c,8.048026295989255e-05,Gradient Boosting
+wbc_count,8.04151649594629e-05,Gradient Boosting
+diastolic_bp,7.757556471185676e-05,Gradient Boosting
+duration_days,3.426202751657522e-05,Gradient Boosting
+alcohol_use,1.6921666408974813e-05,Gradient Boosting

@@ -1,0 +1,27 @@
+feature,mean_abs_shap,model
+age,0.0723102575879797,Neural Network
+concurrent_drugs,0.04571585854137796,Neural Network
+creatinine,0.030017353634254448,Neural Network
+drug_name,0.003186851468715647,Neural Network
+smoking_status,0.0028559647923063567,Neural Network
+diagnosis,0.002375175989102599,Neural Network
+bmi,0.0020464786501729858,Neural Network
+route,0.0012936845017549451,Neural Network
+gender,0.000987184389101353,Neural Network
+weight_kg,0.000947803611710814,Neural Network
+ethnicity,0.000945881416373305,Neural Network
+alcohol_use,0.0008900512675981346,Neural Network
+height_cm,0.0005694468952522631,Neural Network
+alt,0.000507726755548199,Neural Network
+hba1c,0.000412143688615429,Neural Network
+diastolic_bp,0.0004059630350883476,Neural Network
+temperature_f,0.0003372230674934127,Neural Network
+systolic_bp,0.00032346314250272345,Neural Network
+heart_rate,0.00030659623195820597,Neural Network
+duration_days,0.00027728801371080115,Neural Network
+total_cholesterol,0.00025897739418537805,Neural Network
+egfr,0.00019875188926638424,Neural Network
+wbc_count,0.00018644226233399653,Neural Network
+ast,0.00015317696697699266,Neural Network
+hemoglobin,0.00014900707078356872,Neural Network
+dosage_mg,1.6338516415830283e-05,Neural Network

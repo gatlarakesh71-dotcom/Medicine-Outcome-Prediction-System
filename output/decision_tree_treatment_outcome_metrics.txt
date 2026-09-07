@@ -1,0 +1,67 @@
+Model: Decision Tree
+Split: 60% training / 20% validation / 20% testing
+
+Split sizes:
+Training: 591525
+Validation: 197175
+Testing: 197176
+
+Training metrics:
+Samples: 591525
+Accuracy: 0.5941
+Balanced Accuracy: 0.6097
+Precision: 0.3048
+Recall: 0.6380
+F1-score: 0.4125
+ROC-AUC: 0.6501
+PR-AUC: 0.3329
+Confusion Matrix: [[267113, 192297], [47825, 84290]]
+Classification Report:
+              precision    recall  f1-score   support
+
+          No       0.85      0.58      0.69    459410
+         Yes       0.30      0.64      0.41    132115
+
+    accuracy                           0.59    591525
+   macro avg       0.58      0.61      0.55    591525
+weighted avg       0.73      0.59      0.63    591525
+
+Validation metrics:
+Samples: 197175
+Accuracy: 0.5924
+Balanced Accuracy: 0.6063
+Precision: 0.3024
+Recall: 0.6316
+F1-score: 0.4090
+ROC-AUC: 0.6442
+PR-AUC: 0.3270
+Confusion Matrix: [[88989, 64148], [16225, 27813]]
+Classification Report:
+              precision    recall  f1-score   support
+
+          No       0.85      0.58      0.69    153137
+         Yes       0.30      0.63      0.41     44038
+
+    accuracy                           0.59    197175
+   macro avg       0.57      0.61      0.55    197175
+weighted avg       0.72      0.59      0.63    197175
+
+Testing metrics:
+Samples: 197176
+Accuracy: 0.5911
+Balanced Accuracy: 0.6058
+Precision: 0.3017
+Recall: 0.6323
+F1-score: 0.4085
+ROC-AUC: 0.6417
+PR-AUC: 0.3260
+Confusion Matrix: [[88696, 64441], [16192, 27847]]
+Classification Report:
+              precision    recall  f1-score   support
+
+          No       0.85      0.58      0.69    153137
+         Yes       0.30      0.63      0.41     44039
+
+    accuracy                           0.59    197176
+   macro avg       0.57      0.61      0.55    197176
+weighted avg       0.72      0.59      0.63    197176

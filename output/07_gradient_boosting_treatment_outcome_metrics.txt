@@ -1,15 +1,67 @@
-Accuracy: 0.7766
+Model: Gradient Boosting
+Split: 60% training / 20% validation / 20% testing
 
+Split sizes:
+Training: 591525
+Validation: 197175
+Testing: 197176
+
+Training metrics:
+Samples: 591525
+Accuracy: 0.7767
+Balanced Accuracy: 0.5001
+Precision: 0.9333
+Recall: 0.0001
+F1-score: 0.0002
+ROC-AUC: 0.6470
+PR-AUC: 0.3343
+Confusion Matrix: [[459409, 1], [132101, 14]]
+Classification Report:
+              precision    recall  f1-score   support
+
+          No       0.78      1.00      0.87    459410
+         Yes       0.93      0.00      0.00    132115
+
+    accuracy                           0.78    591525
+   macro avg       0.86      0.50      0.44    591525
+weighted avg       0.81      0.78      0.68    591525
+
+Validation metrics:
+Samples: 197175
+Accuracy: 0.7766
+Balanced Accuracy: 0.5000
+Precision: 0.2500
+Recall: 0.0000
+F1-score: 0.0000
+ROC-AUC: 0.6463
+PR-AUC: 0.3315
+Confusion Matrix: [[153134, 3], [44037, 1]]
+Classification Report:
               precision    recall  f1-score   support
 
           No       0.78      1.00      0.87    153137
-         Yes       0.00      0.00      0.00     44039
+         Yes       0.25      0.00      0.00     44038
+
+    accuracy                           0.78    197175
+   macro avg       0.51      0.50      0.44    197175
+weighted avg       0.66      0.78      0.68    197175
+
+Testing metrics:
+Samples: 197176
+Accuracy: 0.7766
+Balanced Accuracy: 0.5000
+Precision: 0.2857
+Recall: 0.0000
+F1-score: 0.0001
+ROC-AUC: 0.6437
+PR-AUC: 0.3306
+Confusion Matrix: [[153132, 5], [44037, 2]]
+Classification Report:
+              precision    recall  f1-score   support
+
+          No       0.78      1.00      0.87    153137
+         Yes       0.29      0.00      0.00     44039
 
     accuracy                           0.78    197176
-   macro avg       0.39      0.50      0.44    197176
-weighted avg       0.60      0.78      0.68    197176
-
-
-Confusion Matrix:
-[[153136      1]
- [ 44039      0]]
+   macro avg       0.53      0.50      0.44    197176
+weighted avg       0.67      0.78      0.68    197176

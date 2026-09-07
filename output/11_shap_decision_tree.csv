@@ -1,0 +1,27 @@
+feature,mean_abs_shap,model
+age,0.08328338925289587,Decision Tree
+concurrent_drugs,0.05170838071301911,Decision Tree
+creatinine,0.03490078174228033,Decision Tree
+drug_name,0.001987142417724506,Decision Tree
+diagnosis,0.0019550357003093525,Decision Tree
+route,0.001047641594599525,Decision Tree
+ast,0.0010265636970521739,Decision Tree
+weight_kg,0.0008448511209412066,Decision Tree
+smoking_status,0.0008300156737976128,Decision Tree
+total_cholesterol,0.0008251678917279892,Decision Tree
+ethnicity,0.0007242959762766532,Decision Tree
+height_cm,0.0007200276083739487,Decision Tree
+heart_rate,0.0007066828608488075,Decision Tree
+dosage_mg,0.0006775793950275805,Decision Tree
+diastolic_bp,0.0006708001528381263,Decision Tree
+wbc_count,0.0005944512358271655,Decision Tree
+bmi,0.00044136744607509105,Decision Tree
+duration_days,0.00039935133932642486,Decision Tree
+temperature_f,0.00035182837697572613,Decision Tree
+hba1c,0.0003189410709468421,Decision Tree
+egfr,0.0003148117428700863,Decision Tree
+alcohol_use,0.0002822805409547239,Decision Tree
+gender,0.00020410734074805196,Decision Tree
+alt,0.00017512455953316416,Decision Tree
+hemoglobin,0.00016534172163262697,Decision Tree
+systolic_bp,5.1770154769244025e-05,Decision Tree

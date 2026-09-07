@@ -30,6 +30,7 @@ except (ImportError, ModuleNotFoundError) as exc:
 ROOT = Path(__file__).resolve().parent
 OUTPUT_DIR = ROOT / "output"
 MODEL_PATH = OUTPUT_DIR / "09_neural_network_treatment_outcome.keras"
+JOBLIB_MODEL_PATH = OUTPUT_DIR / "09_neural_network_treatment_outcome_model.joblib"
 PREPROCESSOR_PATH = OUTPUT_DIR / "09_neural_network_preprocessor.joblib"
 METRICS_PATH = OUTPUT_DIR / "09_neural_network_treatment_outcome_metrics.txt"
 HISTORY_PLOT_PATH = OUTPUT_DIR / "09_neural_network_training_history.png"
@@ -91,8 +92,11 @@ def main() -> None:
         col for col in X.columns if pd.api.types.is_numeric_dtype(X[col])]
     categorical_cols = [col for col in X.columns if col not in numeric_cols]
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=42, stratify=y
+    X_train, X_remaining, y_train, y_remaining = train_test_split(
+        X, y, test_size=0.4, random_state=42, stratify=y
+    )
+    X_validation, X_test, y_validation, y_test = train_test_split(
+        X_remaining, y_remaining, test_size=0.5, random_state=42, stratify=y_remaining
     )
 
     preprocessor = ColumnTransformer(
@@ -123,6 +127,8 @@ def main() -> None:
     )
 
     X_train_processed = preprocessor.fit_transform(X_train).astype(np.float32)
+    X_validation_processed = preprocessor.transform(
+        X_validation).astype(np.float32)
     X_test_processed = preprocessor.transform(X_test).astype(np.float32)
     model = build_model(X_train_processed.shape[1])
 
@@ -142,7 +148,7 @@ def main() -> None:
     history = model.fit(
         X_train_processed,
         y_train.to_numpy(),
-        validation_split=0.1,
+        validation_data=(X_validation_processed, y_validation.to_numpy()),
         epochs=20,
         batch_size=2048,
         class_weight=class_weight,
@@ -170,32 +176,46 @@ def main() -> None:
     fig.savefig(HISTORY_PLOT_PATH, dpi=150)
     plt.close(fig)
 
-    probabilities = model.predict(
-        X_test_processed, batch_size=4096, verbose=0).ravel()
-    y_pred = (probabilities >= 0.5).astype(int)
-    accuracy = accuracy_score(y_test, y_pred)
-    report = classification_report(y_test, y_pred, target_names=["No", "Yes"])
-    cm = confusion_matrix(y_test, y_pred)
+    split_data = {
+        "Training": (X_train_processed, y_train),
+        "Validation": (X_validation_processed, y_validation),
+        "Testing": (X_test_processed, y_test),
+    }
+    results = {}
+    for split_name, (features, labels) in split_data.items():
+        probabilities = model.predict(
+            features, batch_size=4096, verbose=0).ravel()
+        y_pred = (probabilities >= 0.5).astype(int)
+        results[split_name] = {
+            "accuracy": accuracy_score(labels, y_pred),
+            "report": classification_report(
+                labels, y_pred, target_names=["No", "Yes"]),
+            "confusion_matrix": confusion_matrix(labels, y_pred),
+        }
 
     print("Keras Neural Network training summary")
     print(f"Training set size: {len(X_train)}")
+    print(f"Validation set size: {len(X_validation)}")
     print(f"Test set size: {len(X_test)}")
     print(f"Input features after preprocessing: {X_train_processed.shape[1]}")
     print(f"Epochs completed: {len(history.history['loss'])}")
-    print(f"Accuracy: {accuracy:.4f}")
-    print("\nClassification Report:")
-    print(report)
-    print("\nConfusion Matrix:")
-    print(cm)
+    for split_name, metrics in results.items():
+        print(f"{split_name} accuracy: {metrics['accuracy']:.4f}")
 
     model.save(MODEL_PATH)
+    joblib.dump({"model": model, "preprocessor": preprocessor},
+                JOBLIB_MODEL_PATH)
     joblib.dump(preprocessor, PREPROCESSOR_PATH)
     with open(METRICS_PATH, "w", encoding="utf-8") as metrics_file:
-        metrics_file.write(f"Accuracy: {accuracy:.4f}\n\n")
-        metrics_file.write(report)
-        metrics_file.write("\n\nConfusion Matrix:\n")
-        metrics_file.write(str(cm))
-        metrics_file.write(f"\n\nTraining set size: {len(X_train)}")
+        for split_name, metrics in results.items():
+            metrics_file.write(
+                f"{split_name} accuracy: {metrics['accuracy']:.4f}\n\n")
+            metrics_file.write(metrics["report"])
+            metrics_file.write("\nConfusion Matrix:\n")
+            metrics_file.write(str(metrics["confusion_matrix"]))
+            metrics_file.write("\n\n")
+        metrics_file.write(f"Training set size: {len(X_train)}")
+        metrics_file.write(f"\nValidation set size: {len(X_validation)}")
         metrics_file.write(f"\nTest set size: {len(X_test)}")
         metrics_file.write(
             f"\nInput features after preprocessing: {X_train_processed.shape[1]}")
@@ -203,6 +223,7 @@ def main() -> None:
             f"\nEpochs completed: {len(history.history['loss'])}")
 
     print(f"\nSaved trained Keras model: {MODEL_PATH}")
+    print(f"Saved joblib model bundle: {JOBLIB_MODEL_PATH}")
     print(f"Saved preprocessing pipeline: {PREPROCESSOR_PATH}")
     print(f"Saved evaluation metrics: {METRICS_PATH}")
     print(f"Saved training history plot: {HISTORY_PLOT_PATH}")
