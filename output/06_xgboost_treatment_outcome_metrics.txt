@@ -8,60 +8,66 @@ Testing: 197176
 
 Training metrics:
 Samples: 591525
-Accuracy: 0.7779
-Balanced Accuracy: 0.5044
-Precision: 0.6987
-Recall: 0.0100
-F1-score: 0.0197
-ROC-AUC: 0.6720
-PR-AUC: 0.3670
-Confusion Matrix: [[458840, 570], [130793, 1322]]
+Accuracy: 0.5481
+Balanced Accuracy: 0.6190
+Precision: 0.2968
+Recall: 0.7470
+F1-score: 0.4248
+ROC-AUC: 0.6726
+PR-AUC: 0.3646
+Specificity: 0.4909
+Confusion Matrix: [[225546, 233864], [33431, 98684]]
 Classification Report:
               precision    recall  f1-score   support
 
-          No       0.78      1.00      0.87    459410
-         Yes       0.70      0.01      0.02    132115
+          No       0.87      0.49      0.63    459410
+         Yes       0.30      0.75      0.42    132115
 
-    accuracy                           0.78    591525
-   macro avg       0.74      0.50      0.45    591525
-weighted avg       0.76      0.78      0.68    591525
+    accuracy                           0.55    591525
+   macro avg       0.58      0.62      0.53    591525
+weighted avg       0.74      0.55      0.58    591525
+
 
 Validation metrics:
 Samples: 197175
-Accuracy: 0.7765
-Balanced Accuracy: 0.5022
-Precision: 0.4786
-Recall: 0.0064
-F1-score: 0.0125
-ROC-AUC: 0.6475
-PR-AUC: 0.3312
-Confusion Matrix: [[152832, 305], [43758, 280]]
+Accuracy: 0.5406
+Balanced Accuracy: 0.6067
+Precision: 0.2894
+Recall: 0.7261
+F1-score: 0.4138
+ROC-AUC: 0.6476
+PR-AUC: 0.3316
+Specificity: 0.4872
+Confusion Matrix: [[74615, 78522], [12061, 31977]]
 Classification Report:
               precision    recall  f1-score   support
 
-          No       0.78      1.00      0.87    153137
-         Yes       0.48      0.01      0.01     44038
+          No       0.86      0.49      0.62    153137
+         Yes       0.29      0.73      0.41     44038
 
-    accuracy                           0.78    197175
-   macro avg       0.63      0.50      0.44    197175
-weighted avg       0.71      0.78      0.68    197175
+    accuracy                           0.54    197175
+   macro avg       0.58      0.61      0.52    197175
+weighted avg       0.73      0.54      0.58    197175
+
 
 Testing metrics:
 Samples: 197176
-Accuracy: 0.7767
-Balanced Accuracy: 0.5026
-Precision: 0.5080
-Recall: 0.0072
-F1-score: 0.0142
+Accuracy: 0.5375
+Balanced Accuracy: 0.6044
+Precision: 0.2877
+Recall: 0.7254
+F1-score: 0.4120
 ROC-AUC: 0.6456
-PR-AUC: 0.3314
-Confusion Matrix: [[152830, 307], [43722, 317]]
+PR-AUC: 0.3312
+Specificity: 0.4834
+Confusion Matrix: [[74031, 79106], [12094, 31945]]
 Classification Report:
               precision    recall  f1-score   support
 
-          No       0.78      1.00      0.87    153137
-         Yes       0.51      0.01      0.01     44039
+          No       0.86      0.48      0.62    153137
+         Yes       0.29      0.73      0.41     44039
 
-    accuracy                           0.78    197176
-   macro avg       0.64      0.50      0.44    197176
-weighted avg       0.72      0.78      0.68    197176
+    accuracy                           0.54    197176
+   macro avg       0.57      0.60      0.52    197176
+weighted avg       0.73      0.54      0.57    197176
+
