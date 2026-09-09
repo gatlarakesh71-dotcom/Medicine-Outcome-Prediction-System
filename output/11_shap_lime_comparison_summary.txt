@@ -1,0 +1,32 @@
+Medicine Outcome Prediction System - SHAP vs LIME Comparison
+================================================================
+SHAP uses mean absolute contribution on the held-out sample.
+LIME uses mean absolute local contribution, aggregated back to original clinical variables.
+Top-10 overlap is descriptive model agreement, not proof of clinical importance.
+
+Decision Tree
+-------------
+SHAP top features: age, concurrent_drugs, creatinine, drug_name, diagnosis, route, ast, weight_kg, smoking_status, total_cholesterol
+LIME top features: weight_kg, height_cm, heart_rate, diastolic_bp, wbc_count, bmi, temperature_f, alt, hemoglobin, systolic_bp
+Top-10 overlap (1): weight_kg
+Caution: all available LIME contributions for this model are zero; this is not evidence that every feature has no influence.
+
+Random Forest
+-------------
+SHAP top features: age, concurrent_drugs, creatinine, temperature_f, drug_name, diagnosis, route, ethnicity, weight_kg, heart_rate
+LIME top features: temperature_f, weight_kg, heart_rate, alt, systolic_bp, bmi, diastolic_bp, height_cm, wbc_count, hemoglobin
+Top-10 overlap (3): temperature_f, weight_kg, heart_rate
+Caution: all available LIME contributions for this model are zero; this is not evidence that every feature has no influence.
+
+XGBoost
+-------
+SHAP top features: age, concurrent_drugs, creatinine, bmi, weight_kg, drug_name, alt, dosage_mg, egfr, heart_rate
+LIME top features: age, concurrent_drugs, creatinine, drug_name, diagnosis, ethnicity, route, alcohol_use, smoking_status, gender
+Top-10 overlap (4): age, concurrent_drugs, creatinine, drug_name
+
+Gradient Boosting
+-----------------
+SHAP top features: age, concurrent_drugs, creatinine, alt, dosage_mg, ethnicity, drug_name, egfr, weight_kg, bmi
+LIME top features: alt, weight_kg, bmi, hemoglobin, temperature_f, heart_rate, systolic_bp, height_cm, wbc_count, diastolic_bp
+Top-10 overlap (3): alt, weight_kg, bmi
+Caution: all available LIME contributions for this model are zero; this is not evidence that every feature has no influence.

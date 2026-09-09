@@ -1,0 +1,51 @@
+Medicine Outcome Prediction System - LIME Explainability
+Held-out test sample used for local explanations.
+
+Decision Tree - top LIME features
+   1. num__weight_kg: 0.000000
+   2. num__height_cm: 0.000000
+   3. num__bmi: 0.000000
+   4. num__systolic_bp: 0.000000
+   5. num__diastolic_bp: 0.000000
+   6. num__heart_rate: 0.000000
+   7. num__temperature_f: 0.000000
+   8. num__hemoglobin: 0.000000
+   9. num__wbc_count: 0.000000
+  10. num__alt: 0.000000
+
+Random Forest - top LIME features
+   1. num__weight_kg: 0.000000
+   2. num__height_cm: 0.000000
+   3. num__bmi: 0.000000
+   4. num__systolic_bp: 0.000000
+   5. num__diastolic_bp: 0.000000
+   6. num__heart_rate: 0.000000
+   7. num__temperature_f: 0.000000
+   8. num__hemoglobin: 0.000000
+   9. num__wbc_count: 0.000000
+  10. num__alt: 0.000000
+
+XGBoost - top LIME features
+   1. numeric__age: 0.084722
+   2. categorical__diagnosis_Epilepsy: 0.061599
+   3. categorical__diagnosis_GERD: 0.046477
+   4. numeric__creatinine: 0.042661
+   5. categorical__drug_name_Tramadol: 0.042242
+   6. numeric__concurrent_drugs: 0.036563
+   7. categorical__gender_Male: 0.036160
+   8. categorical__smoking_status_Former: 0.033870
+   9. categorical__diagnosis_Hypertension: 0.032408
+  10. categorical__diagnosis_Osteoarthritis: 0.031481
+
+Gradient Boosting - top LIME features
+   1. num__weight_kg: 0.000000
+   2. num__height_cm: 0.000000
+   3. num__bmi: 0.000000
+   4. num__systolic_bp: 0.000000
+   5. num__diastolic_bp: 0.000000
+   6. num__heart_rate: 0.000000
+   7. num__temperature_f: 0.000000
+   8. num__hemoglobin: 0.000000
+   9. num__wbc_count: 0.000000
+  10. num__alt: 0.000000
+

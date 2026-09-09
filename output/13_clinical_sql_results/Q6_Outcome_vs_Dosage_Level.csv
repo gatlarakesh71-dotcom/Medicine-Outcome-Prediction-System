@@ -1,0 +1,5 @@
+dosage_level,patient_count,average_dosage_mg,average_outcome,efficacy_rate_percent
+Low (<100 mg),383441,22.11,0.2229,22.29
+Moderate (100-499 mg),230611,183.34,0.2233,22.33
+High (500-999 mg),152613,625.05,0.2242,22.42
+Very high (1000+ mg),75727,1000.0,0.2237,22.37

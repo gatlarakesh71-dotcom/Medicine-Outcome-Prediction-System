@@ -1,0 +1,105 @@
+model,feature,importance_shap,shap_rank,importance_lime,lime_rank,shap_top10,lime_top10,top10_overlap
+Decision Tree,age,0.0832833892528958,1,,0,True,False,False
+Decision Tree,concurrent_drugs,0.0517083807130191,2,,0,True,False,False
+Decision Tree,creatinine,0.0349007817422803,3,,0,True,False,False
+Decision Tree,drug_name,0.0019871424177245,4,,0,True,False,False
+Decision Tree,diagnosis,0.0019550357003093,5,,0,True,False,False
+Decision Tree,route,0.0010476415945995,6,,0,True,False,False
+Decision Tree,ast,0.0010265636970521,7,,0,True,False,False
+Decision Tree,weight_kg,0.0008448511209412,8,0.0,10,True,True,True
+Decision Tree,smoking_status,0.0008300156737976,9,,0,True,False,False
+Decision Tree,total_cholesterol,0.0008251678917279,10,,0,True,False,False
+Decision Tree,ethnicity,0.0007242959762766,11,,0,False,False,False
+Decision Tree,height_cm,0.0007200276083739,12,0.0,5,False,True,False
+Decision Tree,heart_rate,0.0007066828608488,13,0.0,4,False,True,False
+Decision Tree,dosage_mg,0.0006775793950275,14,,0,False,False,False
+Decision Tree,diastolic_bp,0.0006708001528381,15,0.0,3,False,True,False
+Decision Tree,wbc_count,0.0005944512358271,16,0.0,9,False,True,False
+Decision Tree,bmi,0.000441367446075,17,0.0,2,False,True,False
+Decision Tree,duration_days,0.0003993513393264,18,,0,False,False,False
+Decision Tree,temperature_f,0.0003518283769757,19,0.0,8,False,True,False
+Decision Tree,hba1c,0.0003189410709468,20,,0,False,False,False
+Decision Tree,egfr,0.00031481174287,21,,0,False,False,False
+Decision Tree,alcohol_use,0.0002822805409547,22,,0,False,False,False
+Decision Tree,gender,0.000204107340748,23,,0,False,False,False
+Decision Tree,alt,0.0001751245595331,24,0.0,1,False,True,False
+Decision Tree,hemoglobin,0.0001653417216326,25,0.0,6,False,True,False
+Decision Tree,systolic_bp,5.1770154769244025e-05,26,0.0,7,False,True,False
+Random Forest,age,0.0494130020921934,1,,0,True,False,False
+Random Forest,concurrent_drugs,0.0253838889162147,2,,0,True,False,False
+Random Forest,creatinine,0.0236569327334152,3,,0,True,False,False
+Random Forest,temperature_f,0.0021811109981955,4,0.0,8,True,True,True
+Random Forest,drug_name,0.0019025937896107,5,,0,True,False,False
+Random Forest,diagnosis,0.0011171485201344,6,,0,True,False,False
+Random Forest,route,0.000986464107091,7,,0,True,False,False
+Random Forest,ethnicity,0.0009784285153118,8,,0,True,False,False
+Random Forest,weight_kg,0.0008716607686108,9,0.0,10,True,True,True
+Random Forest,heart_rate,0.000861250429736,10,0.0,4,True,True,True
+Random Forest,ast,0.0008194193011646,11,,0,False,False,False
+Random Forest,alt,0.0006751797507639,12,0.0,1,False,True,False
+Random Forest,systolic_bp,0.000643188588975,13,0.0,7,False,True,False
+Random Forest,total_cholesterol,0.0005960693813004,14,,0,False,False,False
+Random Forest,hba1c,0.0005270728184998,15,,0,False,False,False
+Random Forest,egfr,0.0005168810481002,16,,0,False,False,False
+Random Forest,bmi,0.00043879670066,17,0.0,2,False,True,False
+Random Forest,diastolic_bp,0.0004263007720766,18,0.0,3,False,True,False
+Random Forest,height_cm,0.0003747995795409,19,0.0,5,False,True,False
+Random Forest,wbc_count,0.0003666452180311,20,0.0,9,False,True,False
+Random Forest,smoking_status,0.0003027054130011,21,,0,False,False,False
+Random Forest,alcohol_use,0.0002666264985115,22,,0,False,False,False
+Random Forest,gender,0.0002284323601135,23,,0,False,False,False
+Random Forest,hemoglobin,0.0002036840970426,24,0.0,6,False,True,False
+Random Forest,dosage_mg,0.0001934457089563,25,,0,False,False,False
+Random Forest,duration_days,0.0001354975911326,26,,0,False,False,False
+XGBoost,age,0.0556912441259945,1,0.0847217184178607,5,True,True,True
+XGBoost,concurrent_drugs,0.0346229603135871,2,0.0365625423227852,9,True,True,True
+XGBoost,creatinine,0.0229654977453704,3,0.0426608920038798,8,True,True,True
+XGBoost,bmi,0.0022070590372557,4,0.0104489310592487,12,True,False,False
+XGBoost,weight_kg,0.0016938877275678,5,0.010680646987842,11,True,False,False
+XGBoost,drug_name,0.0012978140134585,6,0.10216458345153781,2,True,True,True
+XGBoost,alt,0.0012319487811979,7,0.0093416282568556,14,True,False,False
+XGBoost,dosage_mg,0.0008325432997436,8,0.0046001460940909,22,True,False,False
+XGBoost,egfr,0.000815857784991,9,0.007509451555837,15,True,False,False
+XGBoost,heart_rate,0.0008052744598126,10,0.0060616869809695,20,True,False,False
+XGBoost,diagnosis,0.0007215150906649,11,0.2155883979785002,1,False,True,False
+XGBoost,temperature_f,0.0006933887907823,12,0.0033508441120056,25,False,False,False
+XGBoost,ast,0.0006323522508215,13,0.0038435347769658,24,False,False,False
+XGBoost,wbc_count,0.0006107249679866,14,0.0040468892136769,23,False,False,False
+XGBoost,hemoglobin,0.0005581380542957,15,0.0069083184051709,16,False,False,False
+XGBoost,duration_days,0.0005404975678409,16,0.0061392591630409,18,False,False,False
+XGBoost,ethnicity,0.0004666149607892,17,0.0982816617462519,3,False,True,False
+XGBoost,total_cholesterol,0.0004401223287106,18,0.0060788692919553,19,False,False,False
+XGBoost,height_cm,0.0004371599173908,19,0.0051609126195062,21,False,False,False
+XGBoost,diastolic_bp,0.000404148898766,20,0.0068597674958759,17,False,False,False
+XGBoost,route,0.0003989514783066,21,0.0860366234540667,4,False,True,False
+XGBoost,systolic_bp,0.000354556256382,22,0.0100643969871209,13,False,False,False
+XGBoost,hba1c,0.0003087880932746,23,0.0031734437866981,26,False,False,False
+XGBoost,alcohol_use,0.0002054807791481,24,0.0203702982722063,10,False,True,False
+XGBoost,smoking_status,0.0001757522218909,25,0.0465040964551196,7,False,True,False
+XGBoost,gender,0.0001349810939257,26,0.050500942883058904,6,False,True,False
+Gradient Boosting,age,0.0472268141746827,1,,0,True,False,False
+Gradient Boosting,concurrent_drugs,0.0243923366155419,2,,0,True,False,False
+Gradient Boosting,creatinine,0.0170399593516359,3,,0,True,False,False
+Gradient Boosting,alt,0.0005979395537882,4,0.0,1,True,True,True
+Gradient Boosting,dosage_mg,0.0005651205397858,5,,0,True,False,False
+Gradient Boosting,ethnicity,0.0004958920435976,6,,0,True,False,False
+Gradient Boosting,drug_name,0.0004699066262134,7,,0,True,False,False
+Gradient Boosting,egfr,0.0004024790032044,8,,0,True,False,False
+Gradient Boosting,weight_kg,0.0003920021349113,9,0.0,10,True,True,True
+Gradient Boosting,bmi,0.0003489338262722,10,0.0,2,True,True,True
+Gradient Boosting,diagnosis,0.0003289951708915,11,,0,False,False,False
+Gradient Boosting,gender,0.000269472652163,12,,0,False,False,False
+Gradient Boosting,hemoglobin,0.0002393865247134,13,0.0,6,False,True,False
+Gradient Boosting,ast,0.0002114827788547,14,,0,False,False,False
+Gradient Boosting,smoking_status,0.0002103911023648,15,,0,False,False,False
+Gradient Boosting,temperature_f,0.0001799109552301,16,0.0,8,False,True,False
+Gradient Boosting,heart_rate,0.0001699979596764,17,0.0,4,False,True,False
+Gradient Boosting,total_cholesterol,0.0001427301962467,18,,0,False,False,False
+Gradient Boosting,systolic_bp,0.0001008225418934,19,0.0,7,False,True,False
+Gradient Boosting,route,9.08258194370651e-05,20,,0,False,False,False
+Gradient Boosting,height_cm,8.054152620295289e-05,21,0.0,5,False,True,False
+Gradient Boosting,hba1c,8.048026295989255e-05,22,,0,False,False,False
+Gradient Boosting,wbc_count,8.04151649594629e-05,23,0.0,9,False,True,False
+Gradient Boosting,diastolic_bp,7.757556471185676e-05,24,0.0,3,False,True,False
+Gradient Boosting,duration_days,3.426202751657522e-05,25,,0,False,False,False
+Gradient Boosting,alcohol_use,1.6921666408974813e-05,26,,0,False,False,False

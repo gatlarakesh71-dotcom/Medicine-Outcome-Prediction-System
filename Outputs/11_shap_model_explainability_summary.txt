@@ -1,0 +1,53 @@
+Medicine Outcome Prediction System - SHAP Explainability
+Same stratified split and held-out test-set interpretation as the model comparison report.
+
+SHAP values describe contribution to predicted Yes probability; they do not establish causation.
+
+Decision Tree - top features by mean absolute SHAP value
+   1. age: 0.083532
+   2. concurrent_drugs: 0.051282
+   3. creatinine: 0.034678
+   4. diagnosis: 0.002183
+   5. drug_name: 0.001952
+   6. route: 0.001407
+   7. smoking_status: 0.000961
+   8. alcohol_use: 0.000791
+   9. heart_rate: 0.000779
+  10. ethnicity: 0.000755
+
+Random Forest - top features by mean absolute SHAP value
+   1. age: 0.049139
+   2. concurrent_drugs: 0.025591
+   3. creatinine: 0.023978
+   4. temperature_f: 0.001948
+   5. drug_name: 0.001824
+   6. route: 0.001461
+   7. heart_rate: 0.000988
+   8. diagnosis: 0.000988
+   9. ast: 0.000768
+  10. ethnicity: 0.000712
+
+XGBoost - top features by mean absolute SHAP value
+   1. numeric__age: 0.081476
+   2. numeric__concurrent_drugs: 0.052452
+   3. numeric__creatinine: 0.035261
+   4. numeric__bmi: 0.002132
+   5. numeric__weight_kg: 0.002100
+   6. numeric__alt: 0.002080
+   7. numeric__systolic_bp: 0.001810
+   8. numeric__hemoglobin: 0.001617
+   9. numeric__hba1c: 0.001225
+  10. numeric__wbc_count: 0.000811
+
+Gradient Boosting - top features by mean absolute SHAP value
+   1. age: 0.047244
+   2. concurrent_drugs: 0.024344
+   3. creatinine: 0.017046
+   4. alt: 0.000562
+   5. dosage_mg: 0.000561
+   6. drug_name: 0.000544
+   7. egfr: 0.000441
+   8. ethnicity: 0.000426
+   9. weight_kg: 0.000410
+  10. diagnosis: 0.000379
+

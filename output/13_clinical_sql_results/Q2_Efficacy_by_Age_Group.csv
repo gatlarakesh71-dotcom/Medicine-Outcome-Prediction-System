@@ -1,0 +1,5 @@
+age_group,patient_count,average_outcome,efficacy_rate_percent
+Under 18,17224,0.4123,41.23
+18-39,166434,0.3213,32.13
+40-64,462783,0.2253,22.53
+65+,262453,0.1386,13.86

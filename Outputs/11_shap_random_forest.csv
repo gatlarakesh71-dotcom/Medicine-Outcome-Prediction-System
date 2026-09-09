@@ -1,0 +1,27 @@
+feature,mean_abs_shap,model
+age,0.04913903679240399,Random Forest
+concurrent_drugs,0.02559079730026773,Random Forest
+creatinine,0.023977790723856297,Random Forest
+temperature_f,0.001947834505480997,Random Forest
+drug_name,0.0018239061382819182,Random Forest
+route,0.0014611765235643152,Random Forest
+heart_rate,0.0009881812631865553,Random Forest
+diagnosis,0.0009879412361163229,Random Forest
+ast,0.0007678743306381381,Random Forest
+ethnicity,0.0007115075522445942,Random Forest
+total_cholesterol,0.0006425546559856194,Random Forest
+systolic_bp,0.0006380041445836974,Random Forest
+egfr,0.0005892084595028857,Random Forest
+hba1c,0.0005851371884325733,Random Forest
+alt,0.0005523872447661455,Random Forest
+bmi,0.0005494047351552179,Random Forest
+alcohol_use,0.0004793589366809734,Random Forest
+weight_kg,0.00047370596980253894,Random Forest
+diastolic_bp,0.00039350697448391995,Random Forest
+dosage_mg,0.0003895185294575528,Random Forest
+gender,0.00036982895600307076,Random Forest
+smoking_status,0.0003342892731662548,Random Forest
+height_cm,0.0003123801288671005,Random Forest
+wbc_count,0.00024346313328375287,Random Forest
+duration_days,0.0002225849849197005,Random Forest
+hemoglobin,0.00018557430718927086,Random Forest

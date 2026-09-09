@@ -1,0 +1,121 @@
+drug_name,age_group,patient_count,adverse_event_count,adverse_event_rate_percent
+Ciprofloxacin,65+,3298,1026,31.11
+Levothyroxine,65+,3216,993,30.88
+Sertraline,65+,3200,979,30.59
+Prednisone,65+,3167,967,30.53
+Clopidogrel,65+,3140,955,30.41
+Amlodipine,65+,3078,929,30.18
+Warfarin,65+,15751,4738,30.08
+Albuterol,65+,3210,965,30.06
+Hydrochlorothiazide,65+,3207,964,30.06
+Simvastatin,65+,3115,932,29.92
+Losartan,65+,3158,941,29.8
+Escitalopram,65+,3168,941,29.7
+Atorvastatin,65+,15870,4708,29.67
+Metformin,65+,18919,5595,29.57
+Gabapentin,65+,15641,4620,29.54
+Omeprazole,65+,15895,4693,29.53
+Montelukast,65+,3171,933,29.42
+Insulin Glargine,65+,12561,3690,29.38
+Fluticasone,65+,3125,914,29.25
+Rosuvastatin,65+,3234,944,29.19
+Furosemide,65+,3137,914,29.14
+Amoxicillin,65+,18826,5439,28.89
+Lisinopril,65+,15788,4525,28.66
+Pantoprazole,65+,3138,899,28.65
+Ibuprofen,65+,15527,4426,28.51
+Tramadol,65+,12510,3540,28.3
+Azithromycin,65+,3049,854,28.01
+Metoprolol,65+,3106,866,27.88
+Duloxetine,65+,3135,871,27.78
+Doxycycline,65+,3185,858,26.94
+Clopidogrel,40-64,5613,1435,25.57
+Pantoprazole,40-64,5627,1428,25.38
+Montelukast,40-64,5444,1375,25.26
+Prednisone,40-64,5610,1413,25.19
+Losartan,40-64,5551,1396,25.15
+Rosuvastatin,40-64,5553,1392,25.07
+Escitalopram,40-64,5438,1363,25.06
+Tramadol,40-64,22092,5529,25.03
+Levothyroxine,40-64,5602,1399,24.97
+Warfarin,40-64,28193,7021,24.9
+Doxycycline,40-64,5579,1388,24.88
+Insulin Glargine,40-64,22236,5529,24.87
+Lisinopril,40-64,27689,6855,24.76
+Azithromycin,40-64,5536,1366,24.67
+Amoxicillin,40-64,33251,8192,24.64
+Duloxetine,40-64,5591,1377,24.63
+Metformin,40-64,33035,8122,24.59
+Atorvastatin,40-64,27569,6780,24.59
+Simvastatin,40-64,5555,1365,24.57
+Ibuprofen,40-64,27818,6833,24.56
+Albuterol,40-64,5705,1401,24.56
+Omeprazole,40-64,27918,6828,24.46
+Metoprolol,40-64,5353,1306,24.4
+Gabapentin,40-64,27785,6772,24.37
+Amlodipine,40-64,5652,1376,24.35
+Furosemide,40-64,5610,1354,24.14
+Hydrochlorothiazide,40-64,5665,1367,24.13
+Sertraline,40-64,5512,1330,24.13
+Ciprofloxacin,40-64,5548,1334,24.04
+Fluticasone,40-64,5521,1320,23.91
+Sertraline,18-39,1924,422,21.93
+Prednisone,18-39,1954,416,21.29
+Azithromycin,18-39,1997,425,21.28
+Doxycycline,18-39,2001,421,21.04
+Ciprofloxacin,18-39,1954,408,20.88
+Levothyroxine,18-39,2103,438,20.83
+Tramadol,18-39,7747,1613,20.82
+Warfarin,18-39,10121,2103,20.78
+Simvastatin,18-39,2026,420,20.73
+Omeprazole,18-39,10138,2093,20.65
+Amlodipine,18-39,2053,424,20.65
+Metformin,18-39,11969,2466,20.6
+Montelukast,18-39,2046,420,20.53
+Lisinopril,18-39,9781,2005,20.5
+Ibuprofen,18-39,9973,2043,20.49
+Insulin Glargine,18-39,8007,1623,20.27
+Metoprolol,18-39,1989,403,20.26
+Clopidogrel,18-39,2021,409,20.24
+Gabapentin,18-39,10062,2021,20.09
+Pantoprazole,18-39,2021,406,20.09
+Fluticasone,18-39,2077,417,20.08
+Atorvastatin,18-39,9982,2003,20.07
+Escitalopram,Under 18,180,36,20.0
+Duloxetine,Under 18,246,49,19.92
+Rosuvastatin,18-39,1944,387,19.91
+Hydrochlorothiazide,18-39,2042,405,19.83
+Furosemide,18-39,1926,382,19.83
+Amoxicillin,18-39,12148,2407,19.81
+Albuterol,18-39,1995,393,19.7
+Escitalopram,18-39,2016,394,19.54
+Losartan,18-39,1944,376,19.34
+Lisinopril,Under 18,1016,196,19.29
+Duloxetine,18-39,2038,389,19.09
+Metoprolol,Under 18,185,35,18.92
+Ciprofloxacin,Under 18,217,41,18.89
+Pantoprazole,Under 18,225,41,18.22
+Metformin,Under 18,1172,213,18.17
+Furosemide,Under 18,188,34,18.09
+Amoxicillin,Under 18,1229,222,18.06
+Levothyroxine,Under 18,202,36,17.82
+Atorvastatin,Under 18,1055,187,17.73
+Prednisone,Under 18,199,35,17.59
+Warfarin,Under 18,1060,185,17.45
+Insulin Glargine,Under 18,869,145,16.69
+Azithromycin,Under 18,200,33,16.5
+Doxycycline,Under 18,201,33,16.42
+Simvastatin,Under 18,196,32,16.33
+Ibuprofen,Under 18,1067,172,16.12
+Sertraline,Under 18,194,30,15.46
+Fluticasone,Under 18,214,33,15.42
+Losartan,Under 18,195,30,15.38
+Omeprazole,Under 18,980,150,15.31
+Tramadol,Under 18,821,122,14.86
+Rosuvastatin,Under 18,209,31,14.83
+Amlodipine,Under 18,217,32,14.75
+Gabapentin,Under 18,1041,151,14.51
+Albuterol,Under 18,217,31,14.29
+Montelukast,Under 18,200,28,14.0
+Hydrochlorothiazide,Under 18,212,27,12.74
+Clopidogrel,Under 18,196,20,10.2
